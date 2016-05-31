@@ -5,7 +5,7 @@
       <paths name="result">
         <serverdata>
           <mappings>
-            <mapping deploy="/my-happy-child.com/video" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/kokoro.studio" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
