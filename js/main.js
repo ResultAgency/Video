@@ -215,6 +215,10 @@ $(document).ready(function() {
         $.cookie('action',ts.getTime());
     }
 
+    if(ts < new Date()){
+        var promo = $("p.promo span");
+        promo.text('000-000');
+    }
 
     var labels = ['Дней', 'Часов', 'Минут', 'Секунд'],
         nextYear = ts,
