@@ -12,9 +12,9 @@
         border-radius: 0 0 25px 25px;
     }
 
-    /*.item-video{*/
-        /*height: 35vh;*/
-    /*}*/
+    .item-video{
+        height: 35vh;
+    }
     #price .video-bg{
         display: block;
     }
@@ -164,9 +164,9 @@
     }
 }
 @media (min-width: 992px){
-    /*.item-video{*/
-        /*height: 50vh;*/
-    /*}*/
+    .item-video{
+        height: 50vh;
+    }
     .li.telephone{
         display: block;
     }
@@ -187,9 +187,9 @@
     header,section,footer{
         min-height:110vh;
     }
-    /*.item-video{*/
-        /*height: 65vh;*/
-    /*}*/
+    .item-video{
+        height: 65vh;
+    }
     .owl-next,.owl-prev{
         height: 65vh;
     }
