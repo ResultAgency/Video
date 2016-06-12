@@ -11,11 +11,11 @@ $(document).ready(function() {
             scrollTop: $(this.hash).offset().top - 100
         }, 1000);
     });
-    
+
     var videoElement = $('#Video').find('iframe');
     $('#Video').on('show.bs.modal',function (e) {
         var video = $(e.relatedTarget).data('video');
-        videoElement.attr('src','//www.dailymotion.com/embed/video/'+video+'?autoPlay=1');
+        videoElement.attr('src','https://player.vimeo.com/video/'+video+'?autoplay=1');
     });
 
     $('#Video').on('hide.bs.modal',function (e) {
@@ -44,24 +44,7 @@ $(document).ready(function() {
         }
     });
 
-    // $('.panel-video-box').owlCarousel({
-    //     items:2,
-    //     merge:true,
-    //     loop:true,
-    //     margin:10,
-    //     video:true,
-    //     lazyLoad:true,
-    //     center:true,
-    //     dots: true,
-    //     responsive:{
-    //         0:{
-    //             items:2
-    //         },
-    //         600:{
-    //             items:2
-    //         }
-    //     }
-    // });
+    ;
 
     var ClientWidth=$(window).width();
     var placement="left";
@@ -296,6 +279,18 @@ $(document).ready(function() {
         var tab = $(e.relatedTarget).data('tab');
         $("[aria-controls=" + tab + "]").click();
     });
+
+
+    setTimeout(function () {
+        var videos = document.getElementsByClassName('owl-video-tn');
+
+        [].forEach.call(videos, function(e) {
+            e.style.opacity = '1';
+            e.style.backgroundImage = "url(" + e.getAttribute('data-src') + ")";
+        });
+    },5000);
+    
+    
 });
 
 function pacet(e){
